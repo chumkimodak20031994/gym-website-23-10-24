@@ -1,0 +1,179 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.open-sans{
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+body{
+    background-color: black;
+    margin: 0;
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; 
+
+    width: 50%;
+    align-items: center;
+}
+.nav-title{
+    color: rgba(230, 83, 60, 1);
+    font-weight: bolder;
+    font-size: 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+}
+.nav-items{
+    list-style: none;
+   
+ 
+}
+.nav-link{
+    text-decoration: none;
+    color: white;
+    margin-right: 30px;
+    font-size: 16px;
+}
+#home{
+    padding: 8px 15px;
+    border-radius: 14px;
+    background-color: rgba(230, 83, 60, 1);
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+        justify-content: center;
+}
+
+.banner-content {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  max-width: 50%;
+  
+  margin: 0 auto; 
+
+}
+.banner-heading {
+   
+    font-size: 2.5rem; 
+    line-height: 1.2;
+    text-align: start;
+   
+    font-weight: bolder; 
+    color:white; 
+    
+  }
+  .banner-text{
+   
+    color:rgb(175, 174, 174);
+    text-align: start;
+    max-width: 340px;
+   
+    font-size: 12px;
+    
+    margin-top: 10px;
+  }
+ 
+.btn-bnr{
+   
+    padding-top: 20px;
+   
+    display: flex;
+    
+}
+ 
+.button-banner{
+    text-decoration: none;
+      color: white;
+     
+      border-radius: 12px;
+     
+      padding: 8px,20px;
+      
+      margin-right: 10px;
+  }
+ 
+  #Download{
+    padding: 8px 15px;
+    border-radius: 14px;
+    border: 1px solid white;
+}
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.bnr-img {
+    width: 100%; /* Adjust the image width as needed */
+    height: auto;
+}
+
+.custom-button {
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 30%; 
+    
+    transform: translate(-50%, -50%); 
+    width: 60%;
+    position: absolute;
+
+}
+
+
+.second-button {
+    border: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: 80%; 
+    left: 10%; 
+    transform: translate(-50%, -50%); 
+    position: absolute;
+    width: 60%;
+
+}
+
+.flex-container {
+    display: flex;
+    align-items: center; 
+    
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: rgba(230, 83, 60, 1);
+    margin-right: 4px;
+    border-radius: 50%;
+}
+.video{
+    color: rgb(175, 174, 174);
+    font-size: 12px;
+    text-align: start;
+   
+}
+.video-five {
+    margin: 0; 
+    font-size: 24px; 
+    font-weight: bolder;
+    color: white; 
+    text-align: start;
+}
