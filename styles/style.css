@@ -13,16 +13,13 @@ body{
 }
 
 .navbar {
+  
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* justify-content: center; */
-    padding: 10px 20px;
+    justify-content: center;
     /* position: relative; */
-    max-width: 50%;
-  
-    margin: 0 auto; 
-    
+ 
 }
 .nav-title{
     color: rgba(230, 83, 60, 1);
@@ -36,7 +33,7 @@ body{
     border: 1px solid rgb(131, 127, 127);
     padding: 10px;
     border-radius: 15px;
-    margin-left: 170px;
+    margin-left: 700px;
    
 }
 .bnr-img{
@@ -53,10 +50,17 @@ body{
     margin-right: 40px;
     font-size: 16px;
 }
-#home{
+.home{
+    text-decoration: none;
+    color: white;
     padding: 8px 15px;
+    font-size: 16px;
     border-radius: 14px;
     background-color: rgba(230, 83, 60, 1);
+    /* margin: 10px; */
+    align-items: start;
+    margin-right: 10px;
+    border: none;
 }
 .banner{
     display: flex;
@@ -71,10 +75,9 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* justify-content: center; */
-  max-width: 50%;
-  
-  margin: 0 auto; 
+ margin: auto;
+ width: 80%;
+ 
 
 }
 .fa-solid {
@@ -108,13 +111,14 @@ body{
 }
 
  
-.btn-bnr{
-   
-    /* padding-top: 20px; */
-   
+.button-container {
     display: flex;
-    
+    justify-content: center; 
+   align-items: center;
+    margin-top: 20px; 
 }
+
+
  
 .button-banner{
     text-decoration: none;
@@ -127,11 +131,15 @@ body{
       margin-right: 10px;
   }
  
-  #Download{
+  .Download{
     padding: 8px 15px;
     border-radius: 14px;
-    border: 1px solid white;
+    font-size: 16px;
     background-color: black;
+    color: white;
+    margin-left: 10px;
+    border: 1px solid white;
+    
 }
 .image-container {
     position: relative;
@@ -219,6 +227,12 @@ body{
    
     
   }
+  .third-container-title{
+    text-align: start;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+}
   /* .body-image{
     display: flex;
     justify-content: center;
@@ -246,15 +260,68 @@ body{
 }
 
 
+.third-section {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px; 
+    border-radius: 10px; 
+    margin: auto;
+    width: 90%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.third-section img {
+    max-width: 500px;
+    border-radius: 15px;
+    height: auto; 
+}
+
+.third-text{
+align-items: center;
+justify-content: center;
+}
+.button-banner {
+    margin-top: 10px;
+    padding: 10px 20px;
+    margin-left: 300px;
+    border-radius: 14px;
+    background-color: rgba(230, 83, 60, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+   
+}
+.second-container-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+  
+    border-radius: 14px;
+    background-color: rgba(230, 83, 60, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+   
+}
+#home {
+    background-color: rgba(230, 83, 60, 1);
+    border-radius: 14px;
+    padding: 5px 10px;
+    /* color: white;  */
+}
 
 @media screen and (max-width: 576px){
     .nav-links {
         display: none;
     }
-    
+ 
 .fa-solid {
     color: white;
-    display: block;
+    /* display: block; */
     
 }
 .banner-content {
@@ -263,11 +330,17 @@ body{
     padding: 5px;
 }
 .body-image div {
-    flex: 1 1 100%;  /* Each item takes up 100% of the width (one per row) */
-    margin: 10px 0;  /* Adjust margin for vertical spacing */
-}
+    flex: 1 1 100%;  
+    margin: 10px 0; 
+    padding: 5px; 
 
     }
+    .third-section{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5px;
+    }
+}
     
 
  @media screen and (min-width: 576px)and(max-width: 992px){  .navbar {
@@ -290,6 +363,10 @@ body{
 .body-image div {
     flex: 2 1 100%;  /* Each item takes up 100% of the width (one per row) */
     margin: 10px 0;  /* Adjust margin for vertical spacing */
+}
+.third-section{
+    display: flex;
+    flex-direction: column-reverse;
 }
 }
 
