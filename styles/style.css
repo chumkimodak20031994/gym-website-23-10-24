@@ -519,7 +519,49 @@ justify-content: center;
     
 }
 
+.footer {
+    margin-top: 30px;
 
+   
+    display: flex;
+    
+    background-color: #333; 
+    color: white; 
+    
+    margin-bottom: 0; 
+}
+
+
+.footer-column {
+    flex: 1; 
+    justify-content: center;
+   
+    padding: 0 50px; 
+    text-align: start; 
+}
+
+.footer-text{
+    margin-bottom: 10px; 
+    margin-top: 20px;
+    color: white;
+}
+.footer-fitness-s {
+    margin-bottom: 10px; 
+    color: #6e6e6e;
+    font-size: 14px;
+}
+.footer-tex-s{
+    margin-bottom: 10px; 
+    color: #6e6e6e;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer-fitness{
+    color: rgba(230, 83, 60, 1);
+    font-weight: bolder;
+    font-size: 40px;
+    margin-bottom: 10px; 
+}
 @media screen and (max-width: 576px){
     .bmi-container {
         flex-direction: column;
@@ -568,13 +610,24 @@ justify-content: center;
    
     .trainer-item {
         width: 100%; 
-        max-width: 95%; /* Increased max-width to allow for more space */
+        max-width: 95%; 
     }
 
     .first-row, .second-row {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+    }
+  
+    .footer {
+        flex-direction: column;
+        align-items: start; 
+    }
+    
+    .footer-column {
+        padding: 20px 5px;
+        text-align:start; 
+        width: 95%; 
     }
     
   
@@ -666,4 +719,32 @@ justify-content: center;
         border-radius: 20px;
         cursor: pointer;
     }
+    .trainer {
+        padding: 20px;     
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+       width: 100%;
+       max-width: 80%;
+       margin: 0 auto;
+    }
+   
+    .footer {
+        flex-direction: column; 
+    }
+
+    .footer-column:first-child {
+        order: 1; 
+    }
+
+    .footer-column:nth-child(2), .footer-column:nth-child(3) {
+       order: 2;
+       
+       
+    }
+    
 }
