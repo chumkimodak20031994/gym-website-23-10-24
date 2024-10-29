@@ -474,33 +474,30 @@ justify-content: center;
     font-size: 12px;
 }
 .trainer {
-    /* margin: 55px; */
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px; 
+  
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
-    justify-content: center;
+    align-items: center;
     background-color: rgba(255, 255, 255, 0.1);
-    margin-left: 200px;
-    margin-right: 200px;
-  
     border-radius: 10px;
-   
-   
-
+   width: 100%;
+   max-width: 80%;
+   margin: 0 auto;
 }
 
 .first-row, .second-row {
     display: flex;
     gap: 20px;
     justify-content: center;
+    
 }
 
 .trainer-item {
     position: relative;
-    width: 350px;
+    width: 380px; 
 }
 
 .trainer-item img {
@@ -511,16 +508,17 @@ justify-content: center;
 
 .overlay-text {
     position: absolute;
-    bottom: 10px;
+    bottom: 15px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
     font-weight: bold;
-  
     padding: 5px 10px;
     border-radius: 5px;
     text-align: center;
+    
 }
+
 
 @media screen and (max-width: 576px){
     .bmi-container {
@@ -567,14 +565,36 @@ justify-content: center;
         flex-direction: column-reverse;
         padding: 5px;
     }
-    .left-side .right-side{
-        margin: 10px;
+   
+    .trainer-item {
+        width: 100%; 
+        max-width: 95%; /* Increased max-width to allow for more space */
     }
+
+    .first-row, .second-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
   
 }
  
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+    .trainer {
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
+    }
+    .trainer-item {
+        width: 90%; /* Full width for smaller screens */
+    }
+    
+    .overlay-text {
+        font-size: 14px;
+        padding: 4px 8px;
+    }
     .navbar {
         flex-direction: row; 
     }
