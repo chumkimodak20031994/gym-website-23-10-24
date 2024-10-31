@@ -15,7 +15,7 @@ body{
 .navbar {
   
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     justify-content: center;
     /* position: relative; */
@@ -223,8 +223,6 @@ body{
     color:rgb(175, 174, 174);
     /* max-width: 200px; */
     text-align: center;
-    word-wrap: break-word;
-   
     font-size: 12px;
     word-wrap: break-word;
   }
@@ -281,7 +279,7 @@ body{
     padding: 20px; 
     border-radius: 10px; 
     margin: auto;
-    width: 90%;
+    width: 80%;
     max-width: 100%;
     margin-bottom: 20px;
 }
@@ -326,17 +324,18 @@ justify-content: center;
     padding: 5px 10px;
     /* color: white;  */
 }
+
 .fourth-section {
-    display: flex;
-    flex-direction: column; 
-    margin-top: 20px;
-    padding: 30px;
     
-    /* padding: 20px;  */
+    width: 82%; 
+    margin: 0 auto; 
+    padding: 20px;
+    text-align: left; 
+  
+   
 }
 .fourth-container-title{
-    text-align: start;
-   
+  
     color: white;
     font-size: 24px;
     font-weight: 700;
@@ -347,8 +346,12 @@ img{
     overflow: hidden;
 }
 .imageset{
-align-items: center; 
-justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }
 .image-row img{
  
@@ -376,25 +379,37 @@ justify-content: center;
    
     color: white; 
 }
+/* image container  */
 .image-row{
     display: flex; 
-   margin-left: 40px;
-    margin-right: 40px;
-}
-.small-img {
+    justify-content: center;
+    margin-bottom: 0;
+    margin-top: 0;
   
-   width: 50%; 
+}
+.trainer-image{
+    position: relative;
+}
+.small-img, .medium-img, .smedium-img, .large-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.small-img {
+    width: 320px;
+}
+
+.medium-img {
+    width: 530px;
+}
+
+.smedium-img {
+    width: 400px;
 }
 
 .large-img {
-    width: 150%;
-    background-color: rgb(177, 40, 40);
-   
+    width: 610px;
 }
-.medium-img{
-    width: 80%;
-}
-
 
 .bmi-container {
     display: flex;
@@ -408,6 +423,7 @@ justify-content: center;
     width: 100%;
     max-width: 100%;
     margin-bottom: 20px;
+    margin-top: 50px;
 }
 .left-side, .right-side {
     width: 45%;
@@ -474,8 +490,9 @@ justify-content: center;
     font-size: 12px;
 }
 .trainer {
-    padding: 20px; 
-  
+    padding-right: 20px; 
+    padding-bottom: 30px;
+  padding-top: 15px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -486,6 +503,7 @@ justify-content: center;
    width: 100%;
    max-width: 80%;
    margin: 0 auto;
+   margin-top: 20px;
 }
 
 .first-row, .second-row {
@@ -505,19 +523,27 @@ justify-content: center;
     height: 100%;
     border-radius: 10px;
 }
-
-.overlay-text {
+.overlay-text, .overlay-text2 {
     position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    /* left: 40%; */
     color: white;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
+    /* padding: 5px 10px; */
     text-align: center;
-    
+   
 }
+
+.overlay-text {
+    bottom: 40px; 
+    font-size: 18px;
+}
+
+.overlay-text2 {
+    bottom: 10px; 
+    font-size: 16px;
+}
+
 .overlay-text-from{
     position: absolute;
     top: 55%;
@@ -537,9 +563,12 @@ justify-content: center;
 }
 .gym-item {
     position: relative;
-    width: 1250px;
+    width: 100%;
+    max-width: 80%;
     height: 600px;
-   
+    background: rgba(85, 81, 81, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
     /* border: none; */
 }
 
@@ -547,26 +576,102 @@ justify-content: center;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 20px;
+  
+    padding: 10px;
 }
 
 .overlay {
     position: absolute;
     top: 0;
+  
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(85, 81, 81, 0.5); 
+    /* background: rgba(85, 81, 81, 0.5);  */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: end;
     border-radius: 20px;
-    padding: 10px;
+    /* padding: 30px; */
     text-align: center;
 }
 
-
+.overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(65, 157, 180, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+   
+   
+    text-align: center;
+}
+.overlay4 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(77, 79, 80, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+   
+   
+    text-align: center;
+}
+.overlay5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(38, 252, 84, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+   
+   
+    text-align: center;
+}
+.overlay6 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(174, 163, 208, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+   
+   
+    text-align: center;
+}
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(250, 120, 120, 0.5); 
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+    
+   
+    text-align: center;
+}
 .login-page {
     display: flex;
     flex-direction: column;
@@ -600,7 +705,7 @@ form input {
     cursor: pointer;
     align-items: center;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
 }
 
@@ -690,20 +795,25 @@ form input {
     .input-short, .input-wide, .right-side button {
         width: 100%;
     }
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+
     .nav-links {
         display: none;
     }
  
 .fa-solid {
     color: white;
-    /* display: block; */
+  
     
 }
 .banner-content  {
-    display: flex;
-    
-    flex-direction: column;
-    padding: 5px;
+    display: flex;   
+    flex-direction: column-reverse;
+    padding: 65px;
+   
 }
 .body-image div {
     flex: 1 1 100%;  
@@ -739,13 +849,20 @@ form input {
         text-align:start; 
         width: 95%; 
     }
-    
+    .image-row {
+       flex-wrap: wrap;
+    }
+
+    .trainer-image {
+    width: calc(50% - 10px);
+    }
   
 }
  
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .trainer {
+   
+    .trainer, .imageset {
         margin-left: 0;
         margin-right: 0;
         padding: 10px;
@@ -758,15 +875,12 @@ form input {
         font-size: 14px;
         padding: 4px 8px;
     }
-    .navbar {
-        flex-direction: row; 
+  
+   
+    .fa-bars {
+        display: none; 
     }
 
-    .nav-links {
-        flex-direction: row; 
-    }
-  
-    /* Stack `.bmi-container` sections vertically */
     
     .fa-solid {
         display: none;
@@ -855,6 +969,9 @@ form input {
        order: 2;
        
        
+    }
+    .imageset{
+        margin: 10;
     }
     
 }
