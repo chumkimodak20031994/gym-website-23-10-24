@@ -107,8 +107,13 @@ body{
     margin-bottom: 40px;
   }
   .italic {
-    font-style: italic;
+    font-style: italic; 
+    font-family: 'Georgia', serif;
+    letter-spacing: 0.02em; 
+    font-weight: 100;
+    line-height: 1.2; 
 }
+
 
  
 .button-container {
