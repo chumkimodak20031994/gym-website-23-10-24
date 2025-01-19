@@ -532,7 +532,7 @@ img{
     position: absolute;
     width: 100%;
     /* left: 40%; */
-    color: white;
+   
     font-weight: bold;
     /* padding: 5px 10px; */
     text-align: center;
@@ -542,11 +542,15 @@ img{
 .overlay-text {
     bottom: 40px; 
     font-size: 18px;
+    color: white;
+    
 }
 
 .overlay-text2 {
     bottom: 10px; 
     font-size: 16px;
+    color: rgb(206, 201, 201);
+    
 }
 
 .overlay-text-from{
